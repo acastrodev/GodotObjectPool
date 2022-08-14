@@ -1,17 +1,3 @@
-# GodotObjectPool
-Simple object pool design pattern implementation using C# in Godot Game Engine.
-
-![Sreenshot](https://github.com/acastrodev/GodotObjectPool/blob/main/Screenshot.png?raw=true)
-
-# References
-- https://github.com/godot-addons/godot-object-pool
-- https://en.wikipedia.org/wiki/Object_pool_pattern
-
-# Usage example:
-
-Main.cs
-
-```csharp
 using Godot;
 
 using ObjectPool;
@@ -62,4 +48,3 @@ namespace Example
         }
     }
 }
-```

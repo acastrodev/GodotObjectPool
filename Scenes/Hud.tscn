@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Hud.cs" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 1 )
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Instructions" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+text = "Press [left click] to fire"
+
+[node name="Available" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 37.0
+margin_right = 213.0
+margin_bottom = 52.0
+custom_fonts/font = SubResource( 2 )
+text = "Objects avaiable: 0"
+
+[node name="InUse" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 52.0
+margin_right = 213.0
+margin_bottom = 70.0
+custom_fonts/font = SubResource( 2 )
+text = "Objects in use: 0"
+
+[node name="Releasing" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 67.0
+margin_right = 213.0
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 2 )
+text = "Last object released: none"
